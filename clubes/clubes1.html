@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../assets/js/jquery-3.6.3.js"></script>
+  <script src="../assets/js/jquery-ui.js"></script>
+  <script src="../assets/js/jquery.ui.datepicker-es.js"></script>
+  <script src="../assets/js/"></script>
+  <script src="../assets/js/bootstrap.js"></script>
+  <script src="../assets/js/"></script>
+
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.structure.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.theme.css">
+  <link rel="stylesheet" href="../assets/css/clubes.css">
+  <title>Reserva en Deporte en Córdoba</title>
+
+</head>
+<header>
+  <nav class="navbar fixed-top  navbar-expand-sm navbar-toggleable-sm navbar-dark bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            victor-manuel.aguilera@synlab.es
+          </button>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" title="Manage" href="/Identity/Account/Manage/ChangePassword">Cambiar contraseña</a>
+            <a class="dropdown-item" title="Manage" href="/Identity/Account/Manage">Mi perfil</a>
+            <a class="dropdown-item" title="Manuales" href="/Tablas/Manuales">Manuales</a>
+            <div class="dropdown-divider"></div>
+            <form class="px-4 py-3" action="/Identity/Account/Logout?returnUrl=%2FHome" method="post">
+              <button type="submit" class="btn btn-info" style="min-width:100px;">Salir</button>
+              <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DryWFe4jCNKlwV6Hk7RSJCNfCQu3e0ZDoOWLstJl9mmNOdqxHSbtglsSpSUOYh0dnVSGv1QtStu6y4IQ-RAUhrsfEGsVjEUR5mqOXg1VC04BMGRZ8nXHKIeIWbRMLquqkwQum_VJQ6RyEb2dXmLGiIfIYeQ8mEq7qv03WlsCciKbkPWVYogDCeUCyG_BO7MEA">
+            </form>
+
+          </div>
+        </div>
+
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item dropdown" style="margin-right:20px;">
+            <a href="#" class="btn  nav-link dropdown-toggle" style="background-color:#F0810F;" data-toggle="dropdown">Cita previa</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/Cita/IndexFechaCitasCentros">Citas diarias</a>
+              <a class="dropdown-item" href="/Cita/IndexCitaCentros">Buscar citas particulares</a>
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Centro">Listado de centros</a>
+              <a class="dropdown-item" href="/Tablas/IndexEmpresas?estado=Activas">Listado de empresas</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Cita/IndexFechaCitaDomiciliaria">Citas domiciliarias</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/CalendarioDomicilio/BuscarCentrosPorCodigoPostal">Centros con citas domiciliarias</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" style="margin-right:20px;">
+            <a href="#" class="btn btn-info nav-link dropdown-toggle" data-toggle="dropdown">Colectivos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/Centro/PotencialSlotsGeneral">Potencial de reservas</a>
+              <a class="dropdown-item" href="/Colectivo/CrearColectivoIndicandoHora">Preparar reserva</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" tabindex="-1" href="/Colectivo?estado=EnPreparacion">Listado colectivos</a>
+              <a class="dropdown-item" tabindex="-1" href="/Colectivo/IndexAnulados">Listado colectivos anulados</a>
+              <div class="dropdown-divider"></div>
+
+              <div class="dropdown-submenu">
+                <a class="test dropdown-item" tabindex="-1" href="#">Tabla empresas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" tabindex="-1" href="/Tablas/IndexEmpresas?estado=Activas">Activas</a></li>
+                  <li><a class="dropdown-item" tabindex="-1" href="/Tablas/IndexEmpresas?estado=NoActivas">No activas</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Empleado/IndexBusqueda">Búsqueda pacientes</a>
+            </div>
+
+          </li>
+          <li class="nav-item dropdown" style="margin-right:20px;">
+            <a href="#" class="btn btn-info nav-link dropdown-toggle" data-toggle="dropdown">Informes</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/Report">Informes</a>
+              <a class="dropdown-item" href="/Report/ExportarOcupacion">Informe ocupación</a>
+              <a class="dropdown-item" href="/Report/ExportarDatosCentros247">Informe centro y día</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+  <script>
+$(function () {
+$.datepicker.setDefaults($.datepicker.regional["es"]);
+$("#datepicker").datepicker({
+firstDay: 1,
+// funcion cuando pinchas en el calendario
+onSelect: function (date) {
+alert(date)
+},
+});
+});
+</script>
+</head>
+<!-- Style para el calendario: -->
+<style>
+  .ui-widget{
+
+  }
+</style>
+
+<body>
+Calendario:
+<div id="datepicker"></div>
+</script>
+
+</body>
+</html>
+    </body>
+    </html>

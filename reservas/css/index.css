@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Russo one', sans-serif;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+.links1{
+    text-align: right;
+    cursor: pointer;
+    
+}
+.full-height {
+    background: rgba(26, 26, 26, 0.363);
+    background-attachment: fixed;
+    max-height: 100vh;
+    height: 100vh;
+    text-align: center;
+
+}
+table{
+    width: 100%;
+    padding-top: 5px;
+    
+}
+.heading-text{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 63px;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-text2{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    
+    
+}
+
+.login-btn{
+    font-family: 'Russo one', sans-serif;
+    color: whitesmoke;
+    background: rgba(48, 95, 197, 0.801);
+    font-size: .9rem;
+    padding: .8rem 1.6rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s all linear;
+}
+.login-btn:hover{
+    background-color: rgba(252, 255, 60, 0.507);
+    color: whitesmoke
+}
+
+
+.dec-logo{
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    padding-left: 20px;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.dec-logo-sub{
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 15px;
+
+}
+
+.nav-item{
+    color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.nav-item:hover{
+    color: #f0f0f0;
+
+}
+.patrocinadores{
+    text-align: left;
+    margin-left: 75px;
+    margin-top: 380px;
+    color: whitesmoke;
+}
+.clients img{
+    margin-left: 75px;
+    text-align: left;
+    max-width: 170px;
+    }
+footer{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    font-size: 13px;
+    margin-left: 40%;
+    margin-bottom: 1rem;
+    animation: transitionIn-Y-over 0.5s;
+    color: whitesmoke;
+}
+
+footer a{
+    color: yellow;
+}
+footer a:hover{
+    color: rgba(48, 95, 197, 0.801);
+    text-decoration: none;
+}

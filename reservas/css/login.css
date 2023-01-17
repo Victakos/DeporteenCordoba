@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo one', sans serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+    
+}
+
+
+
+.container{
+    width: 80%;
+    background-color: rgba(238, 241, 65, 0.616);
+    color: black;
+    border: 1px solid rgba(235, 235, 235, 0.199);
+    border-radius: 8px;
+    margin: 1px;
+    padding: 1px;
+    margin-top: 4px;
+    box-shadow: 0 3px 5px 0 rgba(240, 240, 240, 0.3);
+    animation: transitionIn-Y-over 0.5s;
+
+}
+td{
+    text-align: center;
+
+}
+.header-text{
+    font-weight: 960;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+
+}
+
+.sub-text{
+    font-size: 15px;
+    color: black;
+}
+
+.form-label{
+    color: rgb(44, 44, 44);
+    text-align: left;
+    font-size: 14px;
+}
+.label-td{
+    text-align: left;
+    font-family: 'Russo one', sans serif;
+}
+.login-btn{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: 'Russo one', sans serif;
+    background-color:rgba(48, 95, 197, 0.801);
+    color: white;
+}
+.login-btn:hover{
+    background-color: rgb(233, 255, 106);
+    color: black;
+    border: 1px solid black;
+    font-family: 'Russo one', sans serif;
+}
+
+.logo{
+    width: 300px;
+    padding: 1rem;
+}

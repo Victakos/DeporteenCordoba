@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    box-sizing: border-box;}
+/*Esto se pone siempre de principio en la hoja de estilos CSS */
+
+:root{
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+}
+/* General */
+body{
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+    font-family: 'Russo one', sans-serif;
+    display: flex; /*Esto es para centrarlo en el medio verticalmente*/
+    justify-content: center; /*Esto es el eje horizontal, con center se pone el body todo en el medio*/
+    align-items: center; /*Poner en este caso el BODY todo en el medio*/
+    margin-top: 50px;
+}
+a{
+    color:rgba(48, 95, 197, 0.801);
+} /*Con esto todos los enlaces van a tener este color*/
+
+
+/* Create */
+.create{
+    width: 100%;
+    max-width: 785px;
+    min-width: 320px;
+    border-radius: 15px;
+    background-color:rgba(250, 250, 210, 0.644) ;
+    padding: 1rem;
+    }
+/* Login */
+.login {
+    text-align: right;
+    font-family: 12px;
+}
+.logo{
+    width: 300px;
+    margin-right: 50px;
+}
+/* Content */
+.content{
+    width: 60%;
+    margin: .5rem auto;
+}
+.content h1 {
+    font-size: 28px;
+    text-align: center;
+}
+.content p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+/* Formulario */
+.formulario label{
+    font-size: 14px;
+    width: 300px;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: .3rem;
+}
+.formulario input{
+    display: block;
+    border: 2;
+    border-color: black;
+    border-radius: 5px;
+    color: black;
+    background-color: transparent;
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-family: 'Russo one', sans-serif;  
+}
+.formulario input:last-of-type{
+    background-color: rgba(48, 95, 197, 0.801);
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.2rem 1.2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s all linear;
+}
+.formulario input[type="submit"]:hover{
+    background-color: rgb(233, 255, 106);
+    color: black;
+    border: 1px solid black;
+} */
+.form input[type="text"].error {
+    border: solid thin red;
+}
+
+.form input[type="email"].error {
+    border: solid thin red;
+}
+
+.form input[type="password"].error {
+    border: solid thin red;
+    
+}
+.notify {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+
+.check_notify {
+    background-color: green;
+}
+
+.check_notify.active {
+    display: block;
+}
+
+.error_notify {
+    background-color: red;
+}
+
+.error_notify.active {
+    display: block;
+}
+/* Legal */
+.legal{
+    background-color: rgba(245, 245, 245, 0.616);
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    border-radius: 10px;
+    padding: 2rem;
+}
